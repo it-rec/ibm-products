@@ -141,6 +141,13 @@ async function buildJsScenario(scenario) {
     absWorkingDir: repoRoot,
     mainFields: ['module', 'main'],
     conditions: ['module', 'import', 'browser', 'default'],
+    // Match what production-mode bundlers (Vite, webpack `mode: 'production'`,
+    // Rollup with @rollup/plugin-replace) do by default. This is what lets
+    // dev-only blocks (PropTypes, dev warnings) drop out.
+    define: {
+      'process.env.NODE_ENV': '"production"',
+      __DEV__: 'false',
+    },
     plugins: [
       {
         name: 'externals',
