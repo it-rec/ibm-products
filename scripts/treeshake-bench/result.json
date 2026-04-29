@@ -1,0 +1,477 @@
+{
+  "label": "after fixes",
+  "generatedAt": "2026-04-29T17:15:06.943Z",
+  "node": "v22.22.2",
+  "scenarios": [
+    {
+      "name": "barrel-one",
+      "entry": "fixtures/barrel-one.js",
+      "rawBytes": 22533,
+      "gzipBytes": 8580,
+      "moduleCount": 26,
+      "monorepoModuleCount": 25,
+      "monorepoBytes": 22465,
+      "topModules": [
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/TearsheetShell.js",
+          "bytes": 5563,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/package-settings.js",
+          "bytes": 4014,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/ActionSet/ActionSet.js",
+          "bytes": 2214,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useFocus.js",
+          "bytes": 1320,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/props-helper.js",
+          "bytes": 1168,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useResizeObserver.js",
+          "bytes": 1049,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/_Canary/Canary.js",
+          "bytes": 925,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/settings.js",
+          "bytes": 772,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/node_modules/classnames/index.js",
+          "bytes": 736,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/_virtual/_rolldown/runtime.js",
+          "bytes": 602,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/usePresence.js",
+          "bytes": 598,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/FeatureFlags/index.js",
+          "bytes": 549,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/Tearsheet.js",
+          "bytes": 372,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/Wrap.js",
+          "bytes": 363,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/usePresenceContext.js",
+          "bytes": 354,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/TearsheetPresence.js",
+          "bytes": 338,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/usePortalTarget.js",
+          "bytes": 308,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/uuidv4.js",
+          "bytes": 246,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/pconsole.js",
+          "bytes": 237,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/getNodeTextContent.js",
+          "bytes": 237,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useMergedRefs.js",
+          "bytes": 160,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/usePreviousValue.js",
+          "bytes": 116,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/useId.js",
+          "bytes": 97,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useIsomorphicEffect.js",
+          "bytes": 88,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/devtools.js",
+          "bytes": 39,
+          "monorepo": true
+        }
+      ]
+    },
+    {
+      "name": "barrel-many",
+      "entry": "fixtures/barrel-many.js",
+      "rawBytes": 87411,
+      "gzipBytes": 22185,
+      "moduleCount": 42,
+      "monorepoModuleCount": 41,
+      "monorepoBytes": 87183,
+      "topModules": [
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/assets/NoTagsIllustration.js",
+          "bytes": 11374,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/SidePanel/SidePanel.js",
+          "bytes": 9500,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/assets/NotFoundIllustration.js",
+          "bytes": 9081,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/assets/NotificationsIllustration.js",
+          "bytes": 8326,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/assets/UnauthorizedIllustration.js",
+          "bytes": 7731,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/assets/ErrorIllustration.js",
+          "bytes": 5745,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/TearsheetShell.js",
+          "bytes": 5645,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/package-settings.js",
+          "bytes": 4044,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/assets/NoDataIllustration.js",
+          "bytes": 3823,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/StatusIcon/StatusIcon.js",
+          "bytes": 3168,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/ActionSet/ActionSet.js",
+          "bytes": 2241,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/AboutModal/AboutModal.js",
+          "bytes": 1483,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useFocus.js",
+          "bytes": 1320,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/EmptyStateV2.deprecated.js",
+          "bytes": 1266,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/props-helper.js",
+          "bytes": 1169,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useResizeObserver.js",
+          "bytes": 1049,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/_Canary/Canary.js",
+          "bytes": 936,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/EmptyState.js",
+          "bytes": 833,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/EmptyStateContent.js",
+          "bytes": 828,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/settings.js",
+          "bytes": 782,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/node_modules/classnames/index.js",
+          "bytes": 735,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/EmptyStates/EmptyStateIllustration.deprecated.js",
+          "bytes": 675,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/_virtual/_rolldown/runtime.js",
+          "bytes": 602,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/usePresence.js",
+          "bytes": 598,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/FeatureFlags/index.js",
+          "bytes": 549,
+          "monorepo": true
+        }
+      ]
+    },
+    {
+      "name": "deep-one",
+      "entry": "fixtures/deep-one.js",
+      "rawBytes": 22099,
+      "gzipBytes": 8415,
+      "moduleCount": 26,
+      "monorepoModuleCount": 25,
+      "monorepoBytes": 22066,
+      "topModules": [
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/TearsheetShell.js",
+          "bytes": 5525,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/package-settings.js",
+          "bytes": 3955,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/ActionSet/ActionSet.js",
+          "bytes": 2197,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useFocus.js",
+          "bytes": 1316,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/props-helper.js",
+          "bytes": 1164,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useResizeObserver.js",
+          "bytes": 1049,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/_Canary/Canary.js",
+          "bytes": 877,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/settings.js",
+          "bytes": 733,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/node_modules/classnames/index.js",
+          "bytes": 715,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/usePresence.js",
+          "bytes": 594,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/_virtual/_rolldown/runtime.js",
+          "bytes": 556,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/FeatureFlags/index.js",
+          "bytes": 549,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/Tearsheet.js",
+          "bytes": 372,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/Wrap.js",
+          "bytes": 363,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/usePresenceContext.js",
+          "bytes": 354,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/components/Tearsheet/TearsheetPresence.js",
+          "bytes": 338,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/usePortalTarget.js",
+          "bytes": 304,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/getNodeTextContent.js",
+          "bytes": 233,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/uuidv4.js",
+          "bytes": 217,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/pconsole.js",
+          "bytes": 196,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useMergedRefs.js",
+          "bytes": 160,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/usePreviousValue.js",
+          "bytes": 116,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/hooks/useIsomorphicEffect.js",
+          "bytes": 88,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/useId.js",
+          "bytes": 61,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products/es/global/js/utils/devtools.js",
+          "bytes": 34,
+          "monorepo": true
+        }
+      ]
+    },
+    {
+      "name": "wc-one",
+      "entry": "fixtures/wc-one.js",
+      "rawBytes": 156610,
+      "gzipBytes": 18724,
+      "moduleCount": 7,
+      "monorepoModuleCount": 6,
+      "monorepoBytes": 156578,
+      "topModules": [
+        {
+          "id": "packages/ibm-products-web-components/es/components/tearsheet/tearsheet.scss.js",
+          "bytes": 142495,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products-web-components/es/components/tearsheet/tearsheet.js",
+          "bytes": 13297,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products-web-components/es/_virtual/_@oxc-project_runtime@0.112.0/helpers/decorate.js",
+          "bytes": 325,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products-web-components/es/globals/internal/pconsole.js",
+          "bytes": 183,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products-web-components/es/components/tearsheet/defs.js",
+          "bytes": 182,
+          "monorepo": true
+        },
+        {
+          "id": "packages/ibm-products-web-components/es/globals/settings.js",
+          "bytes": 96,
+          "monorepo": true
+        },
+        {
+          "id": "scripts/treeshake-bench/fixtures/wc-one.js",
+          "bytes": 9,
+          "monorepo": false
+        }
+      ]
+    },
+    {
+      "name": "styles-one",
+      "entry": "fixtures/styles-one.scss",
+      "rawBytes": 2507,
+      "gzipBytes": 675,
+      "moduleCount": 1,
+      "monorepoModuleCount": 1,
+      "monorepoBytes": 2507,
+      "topModules": [
+        {
+          "id": "packages/ibm-products-styles/scss/components/AboutModal",
+          "bytes": 2507,
+          "monorepo": true
+        }
+      ]
+    }
+  ]
+}
