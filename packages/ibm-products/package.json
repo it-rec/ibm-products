@@ -6,6 +6,21 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js",
+      "default": "./es/index.js"
+    },
+    "./es/*": "./es/*",
+    "./lib/*": "./lib/*",
+    "./scss/*": "./scss/*",
+    "./css/*": "./css/*",
+    "./flags.js": "./flags.js",
+    "./package.json": "./package.json",
+    "./telemetry.yml": "./telemetry.yml"
+  },
   "installConfig": {
     "hoistingLimits": "none"
   },
@@ -16,7 +31,6 @@
   },
   "bugs": "https://github.com/carbon-design-system/ibm-products/issues",
   "sideEffects": [
-    "**/global/js/utils/props-helper.js",
     "**/*.css",
     "**/*.scss"
   ],

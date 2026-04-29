@@ -50,7 +50,7 @@ GlobalFeatureFlags.merge({
  * Our FeatureFlagContext is used alongside the FeatureFlags component to enable
  * or disable feature flags in a given React tree
  */
-const FeatureFlagContext = createContext(GlobalFeatureFlags);
+const FeatureFlagContext = /*#__PURE__*/ createContext(GlobalFeatureFlags);
 
 /**
  * Supports an object of feature flag values with the `flags` prop, merging them
