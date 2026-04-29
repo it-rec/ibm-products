@@ -5,6 +5,7 @@
   "license": "Apache-2.0",
   "main": "es/index.js",
   "module": "es/index.js",
+  "types": "es/index.d.ts",
   "type": "module",
   "bugs": "https://github.com/carbon-design-system/ibm-products/issues",
   "repository": {
@@ -24,7 +25,20 @@
     "access": "public",
     "provenance": true
   },
+  "sideEffects": [
+    "**/components/**/*.js",
+    "**/components/**/*.scss.js",
+    "!**/components/**/defs.js",
+    "!**/components/**/*-helpers.js",
+    "**/*.css",
+    "**/*.scss"
+  ],
   "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "default": "./es/index.js"
+    },
     "./es/*": "./es/*",
     "./es-custom/*": "./es-custom/*",
     "./lib/*": "./lib/*",

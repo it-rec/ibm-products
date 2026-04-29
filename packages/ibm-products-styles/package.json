@@ -16,6 +16,14 @@
     "**/*.css",
     "**/*.scss"
   ],
+  "exports": {
+    ".": "./scss/index.scss",
+    "./scss/*": "./scss/*",
+    "./css/*": "./css/*",
+    "./index.scss": "./scss/index.scss",
+    "./package.json": "./package.json",
+    "./telemetry.yml": "./telemetry.yml"
+  },
   "files": [
     "css",
     "scss",
