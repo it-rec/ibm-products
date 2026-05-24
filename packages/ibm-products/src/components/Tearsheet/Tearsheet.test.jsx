@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { render, screen, act } from '@testing-library/react';
+import { render, screen, act, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { expectWarn } from '../../global/js/utils/test-helper';
 
@@ -350,6 +350,21 @@ describe(componentName, () => {
   it('renders headerActions', async () => {
     render(<Tearsheet {...{ headerActions }} />);
     screen.getByText(headerActionButtonLabel);
+  });
+
+  it('only closes the topmost tearsheet when Escape fires (issue #8174)', async () => {
+    const onCloseBottom = jest.fn();
+    const onCloseTop = jest.fn();
+    render(<Tearsheet open onClose={onCloseBottom} title="bottom" />);
+    render(<Tearsheet open onClose={onCloseTop} title="top" />);
+    await act(() => Promise.resolve());
+
+    await act(() =>
+      fireEvent.keyDown(document, { key: 'Escape', code: 'Escape' })
+    );
+
+    expect(onCloseTop).toHaveBeenCalledTimes(1);
+    expect(onCloseBottom).not.toHaveBeenCalled();
   });
 
   it('renders influencer', async () => {

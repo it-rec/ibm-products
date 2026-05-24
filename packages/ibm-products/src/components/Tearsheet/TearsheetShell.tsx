@@ -463,6 +463,17 @@ const TearsheetShellDialog = React.forwardRef(
 
     const areAllSameSizeVariant = () => new Set(stack.sizes).size === 1;
 
+    // Carbon's ComposedModal listens for Escape at the document level, which
+    // would otherwise fire `onClose` on every stacked tearsheet at once
+    // (issue #8174). Returning `false` here keeps non-topmost tearsheets open;
+    // only the topmost tearsheet (position === depth) delegates to consumer.
+    const handleStackedClose = (event?) => {
+      if (position !== depth) {
+        return false;
+      }
+      return onClose?.(event);
+    };
+
     useIsomorphicEffect(() => {
       const setScaleValues = () => {
         if (!areAllSameSizeVariant()) {
@@ -530,7 +541,9 @@ const TearsheetShellDialog = React.forwardRef(
               [`${bc}__container--mixed-size-stacking`]:
                 !areAllSameSizeVariant(),
             })}
-            {...{ onClose, open, selectorPrimaryFocus }}
+            onClose={handleStackedClose}
+            open={open}
+            selectorPrimaryFocus={selectorPrimaryFocus}
             onKeyDown={keyDownListener}
             preventCloseOnClickOutside={!isPassive}
             ref={mergedRefs}

@@ -183,10 +183,7 @@ test.describe('Tearsheet @avt', () => {
     await expect(openButton).toBeFocused();
   });
 
-  // Can include after fixing this https://github.com/carbon-design-system/ibm-products/issues/8174
-  // https://github.com/carbon-design-system/carbon/issues/20426
-  // PR - https://github.com/carbon-design-system/carbon/pull/20586
-  test.skip('@avt-stacking', async ({ page }) => {
+  test('@avt-stacking', async ({ page }) => {
     await visitStory(page, {
       component: 'Tearsheet',
       id: 'components-tearsheet--stacked',
@@ -289,10 +286,7 @@ test.describe('Tearsheet @avt', () => {
     }
   });
 
-  // Can include after fixing this https://github.com/carbon-design-system/ibm-products/issues/8174
-  // https://github.com/carbon-design-system/carbon/issues/20426
-  // PR - https://github.com/carbon-design-system/carbon/pull/20586
-  test.skip('@avt-stacking-different-sizes', async ({ page }) => {
+  test('@avt-stacking-different-sizes', async ({ page }) => {
     await visitStory(page, {
       component: 'Tearsheet',
       id: 'components-tearsheet--stacked-mixed-sizes',
