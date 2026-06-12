@@ -13,6 +13,7 @@ import { AccordionItem, ListItem } from '@carbon/react';
 
 import { getDevtoolsProps } from '../../../global/js/utils/devtools';
 import { pkg } from '../../../settings';
+import { checkComponentEnabled } from '../../../global/js/utils/checkComponentEnabled';
 import { TruncatedList } from '../../TruncatedList';
 import { FilterPanelLabel } from '../FilterPanelLabel';
 
@@ -78,7 +79,7 @@ FilterPanelAccordionItem.deprecated = {
   details: `This component is deprecated`,
 };
 // Return a placeholder if not released and not enabled by feature flag
-FilterPanelAccordionItem = pkg.checkComponentEnabled(
+FilterPanelAccordionItem = checkComponentEnabled(
   FilterPanelAccordionItem,
   componentName
 );

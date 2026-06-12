@@ -25,6 +25,7 @@ import {
   MenuItem,
 } from '@carbon/react';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 import { ArrowLeft, OverflowMenuHorizontal } from '@carbon/react/icons';
 
 import uuidv4 from '../../global/js/utils/uuidv4';
@@ -355,7 +356,7 @@ export let BreadcrumbWithOverflow = ({
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-BreadcrumbWithOverflow = pkg.checkComponentEnabled(
+BreadcrumbWithOverflow = checkComponentEnabled(
   BreadcrumbWithOverflow,
   componentName
 );

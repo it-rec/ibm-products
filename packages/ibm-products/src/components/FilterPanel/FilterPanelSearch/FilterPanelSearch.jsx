@@ -13,6 +13,7 @@ import { Search } from '@carbon/react';
 
 import { getDevtoolsProps } from '../../../global/js/utils/devtools';
 import { pkg } from '../../../settings';
+import { checkComponentEnabled } from '../../../global/js/utils/checkComponentEnabled';
 
 // The block part of our conventional BEM class names (blockClass__E--M).
 const blockClass = `${pkg.prefix}--filter-panel-search`;
@@ -77,7 +78,7 @@ FilterPanelSearch.deprecated = {
   details: `This component is deprecated`,
 };
 // Return a placeholder if not released and not enabled by feature flag
-FilterPanelSearch = pkg.checkComponentEnabled(FilterPanelSearch, componentName);
+FilterPanelSearch = checkComponentEnabled(FilterPanelSearch, componentName);
 
 FilterPanelSearch.displayName = componentName;
 

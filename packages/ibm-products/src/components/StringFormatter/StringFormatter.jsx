@@ -12,6 +12,7 @@ import cx from 'classnames';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 import { DefinitionTooltip } from '@carbon/react';
 import {
@@ -133,7 +134,7 @@ StringFormatter.deprecated = {
   details: `Please replace ${componentName} with TruncatedText`,
 };
 
-StringFormatter = pkg.checkComponentEnabled(StringFormatter, componentName);
+StringFormatter = checkComponentEnabled(StringFormatter, componentName);
 
 StringFormatter.displayName = componentName;
 

@@ -16,7 +16,6 @@
   },
   "bugs": "https://github.com/carbon-design-system/ibm-products/issues",
   "sideEffects": [
-    "**/global/js/utils/props-helper.js",
     "**/*.css",
     "**/*.scss"
   ],
@@ -80,7 +79,6 @@
     "babel-plugin-dev-expression": "^0.2.3",
     "babel-preset-ibm-cloud-cognitive": "^0.47.0-rc.0",
     "change-case": "5.4.4",
-    "classnames": "^2.5.1",
     "copyfiles": "^2.4.1",
     "cross-env": "^10.0.0",
     "fs-extra": "^11.3.0",
@@ -105,8 +103,10 @@
   "dependencies": {
     "@babel/runtime": "^7.26.10",
     "@carbon-labs/react-resizer": "^0.10.0",
+    "@carbon/colors": "^11.39.0",
     "@carbon/feature-flags": "^1.2.0",
     "@carbon/ibm-products-styles": "^2.85.0-rc.0",
+    "@carbon/icons-react": "^11.66.0",
     "@carbon/telemetry": "^0.1.0",
     "@carbon/utilities": "^0.18.0",
     "@carbon/utilities-react": "0.21.0",
@@ -115,6 +115,7 @@
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "@ibm/telemetry-js": "^1.9.1",
+    "classnames": "^2.5.1",
     "prop-types": "^15.8.1",
     "react-table": "^7.8.0",
     "react-window": "^1.8.11"

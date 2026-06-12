@@ -13,6 +13,7 @@ import cx from 'classnames';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg /*, carbon */ } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 import { DescriptionListSize } from './constants';
 // Carbon and package components we use.
 import { StructuredListWrapper } from '@carbon/react';
@@ -87,7 +88,7 @@ DescriptionList.deprecated = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-DescriptionList = pkg.checkComponentEnabled(DescriptionList, componentName);
+DescriptionList = checkComponentEnabled(DescriptionList, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.

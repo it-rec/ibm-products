@@ -2090,6 +2090,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/colors@npm:^11.39.0":
+  version: 11.52.0
+  resolution: "@carbon/colors@npm:11.52.0"
+  dependencies:
+    "@ibm/telemetry-js": "npm:^1.5.0"
+  checksum: 10/2c63efe04cd2a8dfeacec18a4b7385642c2ef0ce8262fb4d9fd05871f094db0069a7ad6bab4defe0836abeb0e2a74008a7b2edb45e82ef6e1437135b83977f22
+  languageName: node
+  linkType: hard
+
 "@carbon/colors@npm:^11.46.0":
   version: 11.46.0
   resolution: "@carbon/colors@npm:11.46.0"
@@ -2250,8 +2259,10 @@ __metadata:
     "@babel/preset-typescript": "npm:^7.26.0"
     "@babel/runtime": "npm:^7.26.10"
     "@carbon-labs/react-resizer": "npm:^0.10.0"
+    "@carbon/colors": "npm:^11.39.0"
     "@carbon/feature-flags": "npm:^1.2.0"
     "@carbon/ibm-products-styles": "npm:^2.85.0-rc.0"
+    "@carbon/icons-react": "npm:^11.66.0"
     "@carbon/styles": "npm:^1.104.0"
     "@carbon/telemetry": "npm:^0.1.0"
     "@carbon/utilities": "npm:^0.18.0"
@@ -2326,6 +2337,28 @@ __metadata:
   dependencies:
     "@ibm/telemetry-js": "npm:^1.5.0"
   checksum: 10/7805e143c8a23494c8108a636dcd9746433adf9445c8eae32125dfbc4cf0ed336bc91a21bc1405daa645699a44564f7ded81dc1de5b2aa0c44b860cbe7813412
+  languageName: node
+  linkType: hard
+
+"@carbon/icon-helpers@npm:^10.76.0":
+  version: 10.76.0
+  resolution: "@carbon/icon-helpers@npm:10.76.0"
+  dependencies:
+    "@ibm/telemetry-js": "npm:^1.5.0"
+  checksum: 10/4752f847ecaaac9cd5c9919e7ac9b4a4dc79db1d7db66998b1654188ce07b6feeccef5b185a15b213cfc9f30303bf8fa77e7c5d9cfa49806f51aaaacb9309119
+  languageName: node
+  linkType: hard
+
+"@carbon/icons-react@npm:^11.66.0":
+  version: 11.82.0
+  resolution: "@carbon/icons-react@npm:11.82.0"
+  dependencies:
+    "@carbon/icon-helpers": "npm:^10.76.0"
+    "@ibm/telemetry-js": "npm:^1.5.0"
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    react: ">=16"
+  checksum: 10/a4da4aee3b1dccf03e182009b881fc8bdb8326ba9902defab7609220654e0982babdcd2f08a70e65c82cedd05e4ac9e3a32ac0b24081a3d3a329a76ee9ad6945
   languageName: node
   linkType: hard
 

@@ -13,6 +13,7 @@ import { Accordion } from '@carbon/react';
 
 import { getDevtoolsProps } from '../../../global/js/utils/devtools';
 import { pkg } from '../../../settings';
+import { checkComponentEnabled } from '../../../global/js/utils/checkComponentEnabled';
 import { FilterPanelGroup } from '../FilterPanelGroup';
 
 // The block part of our conventional BEM class names (blockClass__E--M).
@@ -69,7 +70,7 @@ FilterPanelAccordion.deprecated = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-FilterPanelAccordion = pkg.checkComponentEnabled(
+FilterPanelAccordion = checkComponentEnabled(
   FilterPanelAccordion,
   componentName
 );

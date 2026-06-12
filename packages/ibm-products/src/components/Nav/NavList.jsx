@@ -11,6 +11,7 @@ import cx from 'classnames';
 import { bool, func, node, number, string } from 'prop-types';
 import NavItem, { blockClass as navItemBlockClass } from './NavItem';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 const componentName = 'NavList';
 export const blockClass = `${pkg.prefix}--nav-list`;
@@ -178,6 +179,6 @@ NavList.propTypes = {
 NavList.displayName = componentName;
 
 // Return a placeholder if not released and not enabled by feature flag
-NavList = pkg.checkComponentEnabled(NavList, componentName);
+NavList = checkComponentEnabled(NavList, componentName);
 
 export default NavList;

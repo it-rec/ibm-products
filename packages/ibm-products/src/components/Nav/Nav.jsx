@@ -14,6 +14,7 @@ import NavItem, { blockClass as navItemBlockClass } from './NavItem';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 const componentName = 'Nav';
 const blockClass = `${pkg.prefix}--nav`;
 
@@ -165,7 +166,7 @@ Nav.propTypes = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-Nav = pkg.checkComponentEnabled(Nav, componentName);
+Nav = checkComponentEnabled(Nav, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.

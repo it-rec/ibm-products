@@ -12,6 +12,7 @@ import cx from 'classnames';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 import { InlineLoading } from '@carbon/react';
 import {
@@ -70,10 +71,7 @@ StatusIndicatorStep.deprecated = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-StatusIndicatorStep = pkg.checkComponentEnabled(
-  StatusIndicatorStep,
-  componentName
-);
+StatusIndicatorStep = checkComponentEnabled(StatusIndicatorStep, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.

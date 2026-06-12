@@ -12,6 +12,7 @@ import React, { ForwardedRef } from 'react';
 import cx from 'classnames';
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 // Carbon and package components we use.
 /* TODO: @import(s) of carbon components and other package components. */
@@ -88,7 +89,7 @@ export let DISPLAY_NAME = React.forwardRef(
 );
 
 // Return a placeholder if not released and not enabled by feature flag
-DISPLAY_NAME = pkg.checkComponentEnabled(DISPLAY_NAME, componentName);
+DISPLAY_NAME = checkComponentEnabled(DISPLAY_NAME, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.

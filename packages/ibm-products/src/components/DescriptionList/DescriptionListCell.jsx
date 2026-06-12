@@ -13,6 +13,7 @@ import cx from 'classnames';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg /*, carbon */ } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 // Carbon and package components we use.
 import { StructuredListCell } from '@carbon/react';
 
@@ -41,8 +42,5 @@ DescriptionListCell.propTypes = {
   /** Provide an optional class to be applied to the containing node */
   className: PropTypes.string,
 };
-DescriptionListCell = pkg.checkComponentEnabled(
-  DescriptionListCell,
-  componentName
-);
+DescriptionListCell = checkComponentEnabled(DescriptionListCell, componentName);
 DescriptionListCell.displayName = componentName;

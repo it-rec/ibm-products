@@ -62,13 +62,14 @@ export let ExampleComponent = ({ props }) => {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-ExampleComponents = pkg.checkComponentEnabled(ExampleComponents, componentName);
+ExampleComponents = checkComponentEnabled(ExampleComponents, componentName);
 
 ExampleComponents.displayName = componentName; // displayName is used in preference to function.name by React
 ```
 
 - Using `let` on the export to enable the export to be replaced later.
-- Using the `pkg.checkComponentEnabled` test, which replaces disabled components
+- Using the `checkComponentEnabled` test (imported from
+  `global/js/utils/checkComponentEnabled`), which replaces disabled components
   with a Canary placeholder.
 - Ensuring we specify a displayName for the component.
 

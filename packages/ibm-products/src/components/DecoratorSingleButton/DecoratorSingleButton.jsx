@@ -12,7 +12,7 @@ import { DecoratorBase } from '../DecoratorBase';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { prepareProps } from '../../global/js/utils/props-helper';
-import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 const componentName = 'DecoratorSingleButton';
 
@@ -46,7 +46,7 @@ DecoratorSingleButton.deprecated = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-DecoratorSingleButton = pkg.checkComponentEnabled(
+DecoratorSingleButton = checkComponentEnabled(
   DecoratorSingleButton,
   componentName
 );

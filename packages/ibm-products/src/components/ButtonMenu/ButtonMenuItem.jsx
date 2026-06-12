@@ -9,7 +9,7 @@
 import React from 'react';
 
 // Other standard imports.
-import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 // Carbon and package components we use.
 import { OverflowMenuItem } from '@carbon/react';
@@ -27,6 +27,6 @@ export let ButtonMenuItem = React.forwardRef((props, ref) => (
 ));
 
 // Return a placeholder if not released and not enabled by feature flag
-ButtonMenuItem = pkg.checkComponentEnabled(ButtonMenuItem, componentName);
+ButtonMenuItem = checkComponentEnabled(ButtonMenuItem, componentName);
 
 ButtonMenuItem.propTypes = OverflowMenuItem.propTypes;

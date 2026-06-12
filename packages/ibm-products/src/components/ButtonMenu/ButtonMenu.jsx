@@ -12,6 +12,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 // Carbon and package components we use.
 import { Button, OverflowMenu, usePrefix } from '@carbon/react';
@@ -99,7 +100,7 @@ ButtonMenu.deprecated = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-ButtonMenu = pkg.checkComponentEnabled(ButtonMenu, componentName);
+ButtonMenu = checkComponentEnabled(ButtonMenu, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.

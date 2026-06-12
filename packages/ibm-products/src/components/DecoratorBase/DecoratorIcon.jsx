@@ -23,6 +23,7 @@ import {
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 // The block part of our conventional BEM class names (blockClass__E--M).
 const blockClass = `${pkg.prefix}--decorator-icon`;
@@ -94,7 +95,7 @@ export let DecoratorIcon = React.forwardRef(
 );
 
 // Return a placeholder if not released and not enabled by feature flag
-DecoratorIcon = pkg.checkComponentEnabled(DecoratorIcon, componentName);
+DecoratorIcon = checkComponentEnabled(DecoratorIcon, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.

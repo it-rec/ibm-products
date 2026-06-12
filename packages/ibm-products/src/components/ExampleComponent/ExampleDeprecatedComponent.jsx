@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 import { ExampleComponent } from './ExampleComponent';
 
 const componentName = 'ExampleDeprecatedComponent';
@@ -26,7 +26,7 @@ ExampleDeprecatedComponent.deprecated = {
 };
 
 // The component enable should log the deprecation
-ExampleDeprecatedComponent = pkg.checkComponentEnabled(
+ExampleDeprecatedComponent = checkComponentEnabled(
   ExampleDeprecatedComponent,
   componentName
 );

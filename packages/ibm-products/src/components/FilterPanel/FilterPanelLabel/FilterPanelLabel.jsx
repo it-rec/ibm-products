@@ -12,6 +12,7 @@ import cx from 'classnames';
 
 import { getDevtoolsProps } from '../../../global/js/utils/devtools';
 import { pkg } from '../../../settings';
+import { checkComponentEnabled } from '../../../global/js/utils/checkComponentEnabled';
 
 // The block part of our conventional BEM class names (blockClass__E--M).
 const blockClass = `${pkg.prefix}--filter-panel-label`;
@@ -39,7 +40,7 @@ export let FilterPanelLabel = React.forwardRef(
 );
 
 // Return a placeholder if not released and not enabled by feature flag
-FilterPanelLabel = pkg.checkComponentEnabled(FilterPanelLabel, componentName);
+FilterPanelLabel = checkComponentEnabled(FilterPanelLabel, componentName);
 
 FilterPanelLabel.displayName = componentName;
 

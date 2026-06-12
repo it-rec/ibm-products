@@ -11,6 +11,7 @@ import cx from 'classnames';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 import { ScrollStates, useIsOverflow } from './constants';
 import { useIsomorphicEffect } from '../../global/js/hooks';
 import { usePrefix } from '@carbon/react';
@@ -220,7 +221,7 @@ export let ScrollGradient = React.forwardRef(
 );
 
 // Return a placeholder if not released and not enabled by feature flag
-ScrollGradient = pkg.checkComponentEnabled(ScrollGradient, componentName);
+ScrollGradient = checkComponentEnabled(ScrollGradient, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.

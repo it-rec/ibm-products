@@ -12,6 +12,7 @@ import cx from 'classnames';
 
 import { getDevtoolsProps } from '../../../global/js/utils/devtools';
 import { pkg } from '../../../settings';
+import { checkComponentEnabled } from '../../../global/js/utils/checkComponentEnabled';
 import { FilterPanelLabel } from '../FilterPanelLabel';
 
 // The block part of our conventional BEM class names (blockClass__E--M).
@@ -52,7 +53,7 @@ FilterPanelGroup.deprecated = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-FilterPanelGroup = pkg.checkComponentEnabled(FilterPanelGroup, componentName);
+FilterPanelGroup = checkComponentEnabled(FilterPanelGroup, componentName);
 
 FilterPanelGroup.displayName = componentName;
 

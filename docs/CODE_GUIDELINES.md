@@ -127,12 +127,12 @@ unclear.
     each `${blockClass}__element` class should always be applied to each
     significant element, along with any variants with modifiers that might
     apply.
-  - The exported object should be passed through `checkComponentEnabled`, which
-    enables non-released components to be enable through a feature flag
-    mechanism:
+  - The exported object should be passed through `checkComponentEnabled`
+    (imported from `global/js/utils/checkComponentEnabled`), which enables
+    non-released components to be enable through a feature flag mechanism:
     ```js
     // Return a placeholder if not released and not enabled by feature flag
-    ComponentName = pkg.checkComponentEnabled(ComponentName, componentName);
+    ComponentName = checkComponentEnabled(ComponentName, componentName);
     ```
   - The exported object should also have set on it:
     - `.displayName = componentName;`

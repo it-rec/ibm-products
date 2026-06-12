@@ -13,6 +13,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 // Carbon and package components we use.
 import { Launch } from '@carbon/icons-react';
@@ -175,6 +176,6 @@ NavItem.propTypes = {
 };
 
 // Return a placeholder if not released and not enabled by feature flag
-NavItem = pkg.checkComponentEnabled(NavItem, componentName);
+NavItem = checkComponentEnabled(NavItem, componentName);
 
 export default NavItem;

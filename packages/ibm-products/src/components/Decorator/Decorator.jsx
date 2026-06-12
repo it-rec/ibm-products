@@ -12,7 +12,7 @@ import { DecoratorBase } from '../DecoratorBase';
 
 import { getDevtoolsProps } from '../../global/js/utils/devtools';
 import { prepareProps } from '../../global/js/utils/props-helper';
-import { pkg } from '../../settings';
+import { checkComponentEnabled } from '../../global/js/utils/checkComponentEnabled';
 
 const componentName = 'Decorator';
 
@@ -42,7 +42,7 @@ export let Decorator = React.forwardRef((props, ref) => {
 });
 
 // Return a placeholder if not released and not enabled by feature flag
-Decorator = pkg.checkComponentEnabled(Decorator, componentName);
+Decorator = checkComponentEnabled(Decorator, componentName);
 
 // The display name of the component, used by React. Note that displayName
 // is used in preference to relying on function.name.
